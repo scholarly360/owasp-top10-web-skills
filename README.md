@@ -1,6 +1,6 @@
 # Agent Skills for OWASP Top 10:2025 Security Testing
 
-This repository helps you build **Agent Skills** that test Python web applications against OWASP Top 10:2025 risks.
+This repository helps you build **Agent Skills** that test Python web applications (FastAPI and Flask) against OWASP Top 10:2025 risks.
 
 Instead of vague prompts, these skills guide an agent to follow a **structured and repeatable security workflow**.
 
@@ -72,6 +72,20 @@ The agent will:
 
 ---
 
+### Install with skills.sh :
+
+```bash
+npx skills add scholarly360/owasp-top10-web-skills
+```
+
+Or install a single skill:
+
+```bash
+npx skills add scholarly360/owasp-top10-web-skills@broken-access-control
+```
+
+---
+
 ## Skills Overview
 
 - **Broken Access Control** → Missing authorization, IDOR  
@@ -109,7 +123,6 @@ Each `SKILL.md` contains:
 - **Instructions** → Step-by-step checks  
 - **Output format** → Standardized findings  
 
-Keep skills concise and focused for better execution.
 
 ---
 
@@ -124,7 +137,7 @@ To add a new skill:
 
 ## Conclusion
 
-This repo turns OWASP Top 10:2025 into **actionable workflows for AI agents**.
+This repo turns OWASP Top 10:2025 into **actionable workflows for AI agent skills**.
 
 You get:
 - Structured checks  
@@ -133,4 +146,6 @@ You get:
 
 ---
 
-**Reference:** :contentReference[oaicite:1]{index=1}
+```
+The [OWASP Foundation](https://owasp.org/) has made a tremendous contribution to global cybersecurity by providing a free, open, and community-driven ecosystem of standards, tools, and best practices that help organizations build secure software. As a nonprofit dedicated to improving application security, OWASP empowers developers, architects, and security professionals worldwide through widely adopted resources like the OWASP Top 10, testing guides, and verification standards, which collectively raise awareness of critical vulnerabilities and promote secure coding practices. Its vendor-neutral approach, global community, and commitment to openly accessible knowledge have made it a foundational pillar in shaping modern application security and embedding security into the software development lifecycle.
+```
